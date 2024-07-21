@@ -1,14 +1,21 @@
-<div class="header">
+---
+import "../styles/global.css";
+
+import data from "../data.json";
+
+const { name, label, summary } = data.basics;
+---
+
+<div class="contenedor">
   <div class="imagen"></div>
-  <div class="header_contenedor">
+  <div class="texto">
     <div class="header_titulo">
-      <h1 class="h1_texto">Leonardo Castillo</h1>
-      <p class="h2_texto">Full Stack & Developer software</p>
+      <h1 class="h1_texto">{name}</h1>
+      <p class="h2_texto">{label}</p>
     </div>
     <div class="header_descripcion">
       <p class="h3_texto">
-        +3 años de experiencia desarrollando proyectos. Tecnologo en desarrolo
-        de videojuegos. Especializado en crear soluciones web robustas.
+        {summary}
       </p>
     </div>
     <div class="icones_redes">
@@ -69,47 +76,18 @@
 </div>
 
 <style>
-  .header_contenedor {
-    background-color: azure;
-    width: 52%;
-  }
-
   .imagen {
-    width: 28%;
+    width: 32%;
     background-color: black;
   }
+  .texto {
+    width: 65%;
+  }
 
-  .header {
+  .contenedor {
     display: flex;
-    max-width: 700px;
-    margin: 0 auto 0;
-    justify-content: center;
     gap: 4%;
   }
-
-  .h1_texto {
-    padding: 2px;
-    text-wrap: nowrap;
-    text-transform: uppercase;
-  }
-  .h2_texto {
-    padding: 2px;
-    text-wrap: balance;
-    font-size: 1.2em;
-    color: #818589;
-    margin-bottom: 0.3em;
-  }
-  .h3_texto {
-    padding: 2px;
-    text-wrap: pretty;
-    margin-bottom: 1.5em;
-  }
-
-  /* .icones_redes {
-  padding: 2px;
-  display: flex;
-  gap: 0.2em;
-} */
 
   .icon {
     color: #777;

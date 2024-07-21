@@ -1,0 +1,19 @@
+{
+    "basics": {
+        "name": "Leonardo Castillo",
+        "label": "Full Stack & Developer software",
+        "image": "/io.webp",
+        "email": "leocasti2@gmail.com",
+        "phone": "+57 3152802284",
+        "url": "",
+        "summary": "+3 años de experiencia desarrollando proyectos. Tecnologo en desarrolo de videojuegos. Especializado en crear soluciones web robustas.",
+        "about": "Soy un apasionado del desarrollo web y actualmente estoy estudiando un curso de desarrollador web en Alura Latam. Formé parte del desarrollo de una aplicación web usando Django para el backend, manejando bases de datos y creando API. Además, mejoré la interactividad del sitio con JavaScript y jQuery, haciendo la interfaz más dinámica y receptiva. Mi enfoque integral me permite combinar habilidades de backend y frontend para crear proyectos web completos y eficientes.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Barranquilla",
+            "countryCode": "CO",
+            "region": "Colombia"
+        }
+    }
+}

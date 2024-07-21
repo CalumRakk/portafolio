@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.astro";
+import About from "../components/about.astro";
 ---
 
 <html lang="en">
@@ -14,6 +15,7 @@ import Header from "../components/header.astro";
     <main>
       <div class="contenedor">
         <Header />
+        <About />
       </div>
     </main>
   </body>
@@ -25,9 +27,11 @@ import Header from "../components/header.astro";
     margin: 0;
     padding: 0;
   }
-
+  main {
+    display: flex;
+    justify-content: center;
+  }
   .contenedor {
-    width: 100%;
-    padding: 0 10%;
+    max-width: 700px;
   }
 </style>

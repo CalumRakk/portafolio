@@ -1,0 +1,15 @@
+.h1_texto {
+  margin-bottom: 0;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+}
+.h2_texto {
+  text-wrap: balance;
+  font-size: 1.2em;
+  color: #818589;
+  margin: 0px;
+}
+.h3_texto {
+  text-wrap: pretty;
+  margin-bottom: 1.5em;
+}
