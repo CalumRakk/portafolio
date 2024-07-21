@@ -1,0 +1,18 @@
+---
+import data from "../data.json";
+const { work } = data;
+
+const { position, summary, startDate, endDate } = work;
+
+import InfoCard from "./infoCard.astro";
+---
+
+<section>
+  <h2>Experiencia laboral</h2>
+  <InfoCard
+    name={position}
+    descripcion={summary}
+    startDate={startDate}
+    endDate={endDate}
+  />
+</section>

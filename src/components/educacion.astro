@@ -1,0 +1,18 @@
+---
+import data from "../data.json";
+const { education } = data;
+
+const { institution, area, startDate, endDate } = education;
+
+import InfoCard from "./infoCard.astro";
+---
+
+<section>
+  <h2>Educación</h2>
+  <InfoCard
+    name={institution}
+    descripcion={area}
+    startDate={startDate}
+    endDate={endDate}
+  />
+</section>

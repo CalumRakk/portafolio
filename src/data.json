@@ -15,5 +15,22 @@
             "countryCode": "CO",
             "region": "Colombia"
         }
+    },
+    "work": {
+        "name": null,
+        "position": "Desarrollador Web, Malambo Atlántico",
+        "url": null,
+        "startDate": "01/2023",
+        "endDate": "04/2023",
+        "summary": "Fui parte del Desarrollo de la web usando Djando del lado del backend y para la interactividad de la web usando JavaScript con JQuery."
+    },
+    "education": {
+        "institution": "SENA: Servicio Nacional de Aprendizaje",
+        "url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",
+        "area": "Desarrollador de Videojuegos",
+        "studyType": "Tecnologo",
+        "startDate": "2014",
+        "endDate": "2016",
+        "score": "4.0"
     }
 }

@@ -1,10 +1,6 @@
-.h2_texto {
-  text-wrap: balance;
-  font-size: 1.2em;
-  color: #818589;
-  margin: 0px;
-}
-
 .color_gray {
-  color: #818589;
+  color: #707070;
+}
+section {
+  margin-bottom: 3em;
 }
