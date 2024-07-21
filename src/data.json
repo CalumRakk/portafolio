@@ -32,5 +32,49 @@
         "startDate": "2014",
         "endDate": "2016",
         "score": "4.0"
-    }
+    },
+    "projects": [
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "url": "https://github.com/CalumRakk"
+        }
+    ]
 }
