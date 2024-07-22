@@ -76,5 +76,89 @@
             "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
             "url": "https://github.com/CalumRakk"
         }
+    ],
+    "skills": [
+        {
+            "name": "Python",
+            "filename": "fa6-brands--python",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "Django",
+            "filename": "akar-icons--django-fill",
+            "level": "Avanzado",
+            "keywords": []
+        },
+        {
+            "name": "MongoDb",
+            "filename": "teenyicons--mongodb-outline",
+            "level": "Avanzado",
+            "keywords": []
+        },
+        {
+            "name": "SQL",
+            "level": "Avanzado",
+            "filename": "mdi--sql-query",
+            "keywords": []
+        },
+        {
+            "name": "HTML",
+            "filename": "flowbite--html-solid",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "CSS",
+            "level": "Master",
+            "filename": "flowbite--css-solid",
+            "keywords": []
+        },
+        {
+            "name": "JavaScript",
+            "level": "Master",
+            "filename": "ri--javascript-fill",
+            "keywords": []
+        },
+        {
+            "name": "SQLite",
+            "level": "Avanzado",
+            "filename": "simple-icons--sqlite",
+            "keywords": [
+                "Bases de Datos",
+                "Desarrollo Web",
+                "Escritorio",
+                "Backend",
+                "Servidor"
+            ]
+        },
+        {
+            "name": "Git",
+            "level": "Avanzado",
+            "filename": "mdi--git",
+            "keywords": []
+        },
+        {
+            "name": "GitHub",
+            "level": "Avanzado",
+            "filename": "mdi--github",
+            "keywords": [
+                "Control de Versiones",
+                "Colaboración",
+                "Código Fuente",
+                "Git"
+            ]
+        },
+        {
+            "name": "React",
+            "level": "Avanzado",
+            "filename": "mdi--react",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "JavaScript Library",
+                "UI"
+            ]
+        }
     ]
 }
