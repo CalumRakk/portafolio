@@ -25,19 +25,19 @@ const { city, region } = location;
         {
           profiles.map((profile) => (
             <li>
-              <a href="{item.url}" class="icon">
+              <a href={profile.url} class="icon" target="_blank">
                 <Icon name={profile.icon_filename} />
               </a>
             </li>
           ))
         }
         <li>
-          <a href="mailto:{email}" class="icon">
+          <a href=`mailto:${email}` class="icon">
             <Icon name="material-symbols--mail-outline" />
           </a>
         </li>
         <li>
-          <a href="tel:{phone}" class="icon">
+          <a href=`tel:${phone}` class="icon">
             <Icon name="mdi--phone" />
           </a>
         </li>

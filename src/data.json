@@ -23,16 +23,16 @@
                 "url": "https://www.linkedin.com/in/calumrakk/"
             },
             {
-                "network": "X",
-                "username": "Leo0_cs",
-                "icon_filename": "mdi--twitter",
-                "url": "https://x.com/Leo0_cs"
-            },
-            {
                 "network": "GitHub",
                 "username": "CalumRakk",
                 "icon_filename": "mdi--github",
                 "url": "https://github.com/CalumRakk"
+            },
+            {
+                "network": "X",
+                "username": "Leo0_cs",
+                "icon_filename": "mdi--twitter",
+                "url": "https://x.com/Leo0_cs"
             }
         ]
     },
