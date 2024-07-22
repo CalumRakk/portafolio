@@ -14,7 +14,27 @@
             "city": "Barranquilla",
             "countryCode": "CO",
             "region": "Colombia"
-        }
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "calumrakk",
+                "icon_filename": "mdi--linkedin",
+                "url": "https://www.linkedin.com/in/calumrakk/"
+            },
+            {
+                "network": "X",
+                "username": "Leo0_cs",
+                "icon_filename": "mdi--twitter",
+                "url": "https://x.com/Leo0_cs"
+            },
+            {
+                "network": "GitHub",
+                "username": "CalumRakk",
+                "icon_filename": "mdi--github",
+                "url": "https://github.com/CalumRakk"
+            }
+        ]
     },
     "work": {
         "name": null,
