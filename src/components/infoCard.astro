@@ -33,4 +33,13 @@ const { name, descripcion, startDate, endDate } = Astro.props;
     margin: 0px;
     padding: 0px;
   }
+
+  @media (width <= 700px) {
+    .infoCard {
+      flex-direction: column;
+    }
+    .info {
+      width: 100%;
+    }
+  }
 </style>
