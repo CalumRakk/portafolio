@@ -42,4 +42,13 @@ import Habilidades from "../components/habilidades.astro";
   .contenedor {
     max-width: 700px;
   }
+
+  @media (width <= 700px) {
+    main {
+      justify-content: start;
+    }
+    .contenedor {
+      margin: 0px 0.8em;
+    }
+  }
 </style>

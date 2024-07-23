@@ -113,4 +113,31 @@ const { city, region } = location;
     align-items: center;
     font-size: 0.8em;
   }
+
+  @media (width <= 700px) {
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .imagen {
+      height: 200px;
+      width: 50%;
+    }
+    .texto {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .icons {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+  }
 </style>
