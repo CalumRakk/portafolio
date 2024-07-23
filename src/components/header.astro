@@ -6,6 +6,7 @@ import data from "../data.json";
 
 const { name, label, summary, location, profiles, email, phone } = data.basics;
 const { city, region } = location;
+const contacto = [email, phone].join(" | ");
 ---
 
 <div class="contenedor">
@@ -42,6 +43,13 @@ const { city, region } = location;
           </a>
         </li>
       </ul>
+      <div class="ubicacion">
+        <Icon class="icon2" name="uiw--environment" />
+        <p class="parrafo_ubicacion color_gray">{city}, {region}</p>
+      </div>
+    </div>
+    <div class="icons-no-print">
+      <p>{contacto}</p>
       <div class="ubicacion">
         <Icon class="icon2" name="uiw--environment" />
         <p class="parrafo_ubicacion color_gray">{city}, {region}</p>
@@ -113,7 +121,9 @@ const { city, region } = location;
     align-items: center;
     font-size: 0.8em;
   }
-
+  .icons-no-print {
+    display: none;
+  }
   @media (width <= 700px) {
     .contenedor {
       display: flex;
@@ -138,6 +148,21 @@ const { city, region } = location;
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
+    }
+  }
+  @media print {
+    .icons-no-print {
+      display: flex;
+      font-size: 0.7em;
+      justify-content: space-between;
+    }
+    .icon2 {
+      display: inline-flex;
+      padding: 0px;
+      cursor: auto;
+    }
+    .icons {
+      display: none;
     }
   }
 </style>
