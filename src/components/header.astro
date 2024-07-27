@@ -10,14 +10,13 @@ const contacto = [email, phone].join(" | ");
 ---
 
 <div class="contenedor">
-  <div class="imagen"></div>
   <div class="texto">
     <div>
       <h1 class="titulo">{name}</h1>
       <p class="label color_gray">{label}</p>
     </div>
     <div>
-      <p>
+      <p class="summary">
         {summary}
       </p>
     </div>
@@ -56,9 +55,19 @@ const contacto = [email, phone].join(" | ");
       </div>
     </div>
   </div>
+  <div class="imagen">
+    <img src="https://c.wallhere.com/images/a4/4a/bc0043040759d410a15405f56ef3-2072969.jpg!d"/>
+    <div></div>
+  </div>
 </div>
 
 <style>
+  .summary{
+    margin-top:4px ;
+  }
+  p{
+    font-size: 1em;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -71,21 +80,29 @@ const contacto = [email, phone].join(" | ");
   }
   .label {
     text-wrap: balance;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0px;
   }
   .titulo {
-    margin-top: 0.5em;
     margin-bottom: 0.25em;
     text-wrap: nowrap;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 0px;
   }
-  .imagen {
-    width: 80%;
-    background-color: black;
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 128px;
+    border-radius: 16px;
+    width: 128px;
+    height: 128px;
+   
   }
 
   .contenedor {
+    margin-top: 2vh;
     display: flex;
     gap: 4%;
     /* margin-top: 1vh; */
@@ -131,10 +148,10 @@ const contacto = [email, phone].join(" | ");
       flex-direction: column;
       align-items: center;
     }
-    .imagen {
+    /* .imagen {
       height: 200px;
       width: 50%;
-    }
+    } */
     .texto {
       justify-content: center;
       align-items: center;
