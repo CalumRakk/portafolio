@@ -5,6 +5,7 @@ import Experiencia from "../components/experiencia.astro";
 import Educacion from "../components/educacion.astro";
 import Proyectos from "../components/proyectos.astro";
 import Habilidades from "../components/habilidades.astro";
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 ---
 
 <html lang="en">
@@ -14,6 +15,9 @@ import Habilidades from "../components/habilidades.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Portafolio de Leonardo Castillo</title>
+    <GoogleFontsOptimizer
+      url="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
   </head>
   <body>
     <main>
@@ -39,7 +43,14 @@ import Habilidades from "../components/habilidades.astro";
     </main>
   </body>
 </html>
-
+<style is:global>
+  .color_gray {
+    color: #707070;
+  }
+  body {
+    font-family: "Manrope";
+  }
+</style>
 <style>
   section:first-child > div {
     margin-top: 32px;

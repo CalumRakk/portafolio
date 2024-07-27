@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.12.2"
+    "astro": "^4.12.2",
+    "astro-google-fonts-optimizer": "^0.2.2"
   },
   "devDependencies": {
     "astro-icon": "^1.1.0"
