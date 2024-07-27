@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import Header from "../components/header.astro";
 import About from "../components/about.astro";
 import Experiencia from "../components/experiencia.astro";
@@ -14,41 +15,85 @@ import Habilidades from "../components/habilidades.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/mousetrap@latest/dist/mousetrap.min.js"
+    ></script>
   </head>
   <body>
     <main>
-      <div class="contenedor">
-        <Header />
-        <About />
-        <Experiencia />
-        <Educacion />
-        <Proyectos />
-        <Habilidades />
-      </div>
+      <section>
+        <div><Header /></div>
+      </section>
+      <section class="fondo">
+        <div><About /></div>
+      </section>
+      <section>
+        <div><Experiencia /></div>
+      </section>
+      <section class="fondo">
+        <div><Proyectos /></div>
+      </section>
+      <section>
+        <div><Educacion /></div>
+      </section>
+      <section class="fondo">
+        <div><Habilidades /></div>
+      </section>
     </main>
+    <!-- <div class="icon">
+      <Icon name="material-symbols--translate" />
+      <span>ES</span>
+    </div> -->
   </body>
 </html>
 
 <style>
+  /* section se extiende todo horizontalmente */
+  section {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* se extiende solo dentro del section */
+  section > div {
+    max-width: 750px;
+    background-color: white;
+    width: 100%;
+    padding: 4vh 0vh;
+  }
+  section > div:first-child {
+    padding-top: 0vh;
+  }
+
+  .fondo,
+  section.fondo > div {
+    background-color: #f9fafb;
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
   }
-  main {
+
+  .icon {
     display: flex;
-    justify-content: center;
-  }
-  .contenedor {
-    max-width: 700px;
+    position: fixed;
+    top: 0px;
+    right: 32px;
+    padding: 1vh 0.5vw 0.5vw;
+    gap: 0.1em;
+    align-items: start;
+    font-family: ui-sans-serif;
+    font-weight: 600;
+    color: rgb(193, 195, 200);
   }
 
   @media (width <= 700px) {
-    main {
+    section {
       justify-content: start;
-    }
-    .contenedor {
-      margin: 0px 0.8em;
+      padding-inline: 2vw;
     }
   }
 </style>

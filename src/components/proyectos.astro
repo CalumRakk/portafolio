@@ -75,7 +75,11 @@ import data from "../data.json";
     text-wrap: balance;
     margin: 0px;
   }
-
+  @media (width <= 700px) {
+    ul {
+      justify-content: space-around;
+    }
+  }
   @media print {
     section {
       break-inside: avoid;

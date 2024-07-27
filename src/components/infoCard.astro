@@ -3,36 +3,53 @@ import "../styles/global.css";
 const { name, descripcion, startDate, endDate } = Astro.props;
 ---
 
-<div class="infoCard">
-  <div class="info">
-    <h3 class="name">{name}</h3>
+<section>
+  <div>
+    <h3>{name}</h3>
     <p class="color_gray">{descripcion}</p>
   </div>
-  <p class="color_gray fecha">{startDate}-{endDate}</p>
-</div>
+  <time class="color_gray fecha">{startDate}-{endDate}</time>
+</section>
 
 <style>
-  .infoCard {
+  section {
+    display: flex;
+    justify-content: space-between;
+  }
+  div > h3 {
+    color: #363636;
+    margin: 0px;
+  }
+  time {
+    text-wrap: nowrap;
+  }
+
+  @media (width <= 600px) {
+    section {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<!-- 
+<style>
+  /* .infoCard {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
   }
-  .info {
-    width: 70%;
-  }
+
   .fecha {
     margin-top: 0px;
   }
 
-  .name {
-    text-wrap: nowrap;
-  }
 
   h3 {
     color: #363636;
     margin: 0px;
     padding: 0px;
-  }
+  } */
 
   @media (width <= 700px) {
     .infoCard {
@@ -42,4 +59,4 @@ const { name, descripcion, startDate, endDate } = Astro.props;
       width: 100%;
     }
   }
-</style>
+</style> -->
