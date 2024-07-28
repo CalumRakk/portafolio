@@ -20,11 +20,11 @@ import { Icon } from "astro-icon/components";
     <Icon name="copy" />
   </div>
 
-  <div id="alerta" class="alerta hidden">Hola</div>
+  <div id="alerta" class="alerta hidden"></div>
 </section>
 
 <style>
-  h2{
+  h2 {
     font-size: 1.5em;
   }
   h2 + p {
@@ -33,10 +33,9 @@ import { Icon } from "astro-icon/components";
     color: #8d8d8d;
   }
   section {
-
     font-weight: bold;
   }
-  div > p{
+  div > p {
     font-size: 1.5em;
     margin-block: 0.5em;
   }
@@ -84,7 +83,7 @@ import { Icon } from "astro-icon/components";
   }
 </style>
 
-<script is:inline>
+<script>
   const correo = document.getElementById("correo-copy");
   const telefono = document.getElementById("telefono-copy");
   const alerta = document.getElementById("alerta");
@@ -119,8 +118,4 @@ import { Icon } from "astro-icon/components";
       alert("success");
     });
   });
-
-  //   document.getEelementById("telefono-copy").addEventListener("click", () => {
-  //     navigator.clipboard.writeText("573152802284");
-  //   });
 </script>

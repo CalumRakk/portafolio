@@ -5,5 +5,5 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [icon()],
   site: "https://calumrakk.github.io",
-  base: "my-repo",
+  base: "/portafolio",
 });
