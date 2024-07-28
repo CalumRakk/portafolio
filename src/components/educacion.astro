@@ -16,3 +16,10 @@ import InfoCard from "./infoCard.astro";
     endDate={endDate}
   />
 </section>
+<style>
+  @media print {
+    section {
+      break-inside: avoid;
+    }
+  }
+</style>

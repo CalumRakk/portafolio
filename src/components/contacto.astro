@@ -81,6 +81,11 @@ import { Icon } from "astro-icon/components";
     right: 1vw;
     box-shadow: 0 0 10px #8d8d8d;
   }
+  @media print {
+    section > div > svg:nth-child(3) {
+      visibility: hidden;
+    }
+  }
 </style>
 
 <script>
