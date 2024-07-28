@@ -1,0 +1,184 @@
+{
+    "basics": {
+        "name": "Hi, I'm Leonardo",
+        "label": "Full Stack Developer",
+        "image": "/io.webp",
+        "email": "leocasti2@gmail.com",
+        "phone": "+57 3152802284",
+        "url": "",
+        "summary": "Over 3 years of experience developing projects. Technologist in video game development, specialized in creating robust web solutions.",
+        "about": "I am passionate about web development and currently studying a web developer course at Alura Latam. I was part of the development of a web application using Django for the backend, managing databases, and creating APIs. Additionally, I improved site interactivity with JavaScript and jQuery, making the interface more dynamic and responsive. My comprehensive approach allows me to combine backend and frontend skills to create complete and efficient web projects.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Barranquilla",
+            "countryCode": "CO",
+            "region": "Colombia"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "calumrakk",
+                "icon_filename": "mdi--linkedin",
+                "url": "https://www.linkedin.com/in/calumrakk/"
+            },
+            {
+                "network": "GitHub",
+                "username": "CalumRakk",
+                "icon_filename": "mdi--github",
+                "url": "https://github.com/CalumRakk"
+            },
+            {
+                "network": "Twitter",
+                "username": "Leo0_cs",
+                "icon_filename": "mdi--twitter",
+                "url": "https://twitter.com/Leo0_cs"
+            }
+        ]
+    },
+    "work": {
+        "company": "Malambo Atl\u00e1ntico",
+        "position": "Web Developer",
+        "url": null,
+        "startDate": "2023-01",
+        "endDate": "2023-04",
+        "summary": "Part of the web development using Django for the backend and JavaScript with jQuery for the web interactivity."
+    },
+    "education": {
+        "institution": "National Learning Service (SENA)",
+        "url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",
+        "area": "Video Game Development",
+        "studyType": "Technologist",
+        "startDate": "2014",
+        "endDate": "2016",
+        "score": "4.0"
+    },
+    "projects": [
+        {
+            "name": "toTelegram",
+            "isActive": true,
+            "description": "Turn Telegram into a Google Drive. Save and keep your files safe.",
+            "url": "https://github.com/CalumRakk"
+        },
+        {
+            "name": "Encriptador",
+            "isActive": true,
+            "description": "Encryptor developed for the Oracle Next Education program challenge, taught by Alura Latam.",
+            "url": "https://github.com/CalumRakk/encriptador-de-texto-alura-challenges-one"
+        },
+        {
+            "name": "AutoCloud",
+            "isActive": false,
+            "description": "Script to bypass AWS Academy restrictions and keep EC2 instances always on.",
+            "url": "https://github.com/CalumRakk/Cloud-Labs-Auto"
+        },
+        {
+            "name": "fbstories",
+            "isActive": true,
+            "description": "Script to download Facebook stories.",
+            "url": "https://github.com/CalumRakk/fbstories"
+        },
+        {
+            "name": "sort_files",
+            "isActive": true,
+            "description": "Incredibly fast script to automatically organize the content of specific system folders.",
+            "url": "https://github.com/CalumRakk/sort_files"
+        },
+        {
+            "name": "Transito Project",
+            "isActive": false,
+            "description": "New website for the transit department of Malambo, Atl\u00e1ntico, to manage payments and invoices.",
+            "url": "https://github.com/giraldiego/transito_project"
+        },
+        {
+            "name": "caracolPlay",
+            "isActive": false,
+            "description": "Script to download any series available on the play.CaracolTV platform, which sought to be a 'Netflix'.",
+            "url": "https://github.com/CalumRakk/caracolPlay"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Python",
+            "filename": "fa6-brands--python",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "Django",
+            "filename": "akar-icons--django-fill",
+            "level": "Advanced",
+            "keywords": []
+        },
+        {
+            "name": "MongoDB",
+            "filename": "teenyicons--mongodb-outline",
+            "level": "Advanced",
+            "keywords": []
+        },
+        {
+            "name": "SQL",
+            "filename": "mdi--sql-query",
+            "level": "Advanced",
+            "keywords": []
+        },
+        {
+            "name": "HTML",
+            "filename": "flowbite--html-solid",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "CSS",
+            "filename": "flowbite--css-solid",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "JavaScript",
+            "filename": "ri--javascript-fill",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "SQLite",
+            "filename": "simple-icons--sqlite",
+            "level": "Advanced",
+            "keywords": [
+                "Databases",
+                "Web Development",
+                "Desktop",
+                "Backend",
+                "Server"
+            ]
+        },
+        {
+            "name": "Git",
+            "filename": "mdi--git",
+            "level": "Advanced",
+            "keywords": []
+        },
+        {
+            "name": "GitHub",
+            "filename": "mdi--github",
+            "level": "Advanced",
+            "keywords": [
+                "Version Control",
+                "Collaboration",
+                "Source Code",
+                "Git"
+            ]
+        },
+        {
+            "name": "React",
+            "filename": "mdi--react",
+            "level": "Advanced",
+            "keywords": [
+                "Web Development",
+                "Frontend",
+                "JavaScript Library",
+                "UI"
+            ]
+        }
+    ]
+}

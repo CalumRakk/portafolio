@@ -1,0 +1,127 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section>
+  <h2>Contact me</h2>
+  <p>
+    Feel free to contact me if you are looking for a developer, have any
+    questions or just want to get in touch with me
+  </p>
+  <div id="correo-copy">
+    <Icon name="material-symbols--mail-outline" />
+    <p>leocasti2@gmail.com</p>
+    <Icon name="copy" />
+  </div>
+
+  <div id="telefono-copy">
+    <Icon name="mdi--phone" />
+    <p>+57 3152802284</p>
+    <Icon name="copy" />
+  </div>
+
+  <div id="alerta" class="alerta hidden"></div>
+</section>
+
+<style>
+  h2 {
+    font-size: 1.5em;
+  }
+  h2 + p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #8d8d8d;
+  }
+  section {
+    font-weight: bold;
+  }
+  div > p {
+    font-size: 1.5em;
+    margin-block: 0.5em;
+  }
+  section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section > div > svg:nth-child(3) {
+    cursor: pointer;
+  }
+  section > div > * {
+    padding-inline: 0.5vw;
+  }
+
+  svg {
+    display: inline-flex;
+    padding: 6px;
+  }
+
+  svg:active {
+    color: #8d8d8d;
+    display: inline-flex;
+    box-shadow: 0 0 2px #8d8d8d;
+    border-radius: 20%;
+  }
+  .success {
+    background-color: #19af66;
+  }
+  .danger {
+    background-color: #ff0000;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+
+  .alerta {
+    padding: 0.5rem;
+    border-radius: 6px;
+    position: fixed;
+    min-width: 10vw;
+    top: 1vh;
+    right: 1vw;
+    box-shadow: 0 0 10px #8d8d8d;
+  }
+  @media print {
+    section > div > svg:nth-child(3) {
+      visibility: hidden;
+    }
+  }
+</style>
+
+<script>
+  const correo = document.getElementById("correo-copy");
+  const telefono = document.getElementById("telefono-copy");
+  const alerta = document.getElementById("alerta");
+
+  function alert(tipo) {
+    console.log(tipo);
+    if (tipo == "success") {
+      alerta.classList.add("success");
+      alerta.classList.remove("hidden");
+      alerta.textContent = "¡Copiado!";
+    } else {
+      alerta.classList.add("danger");
+      alerta.classList.remove("hidden");
+      alerta.textContent = "¡Error!";
+    }
+    setTimeout(() => {
+      alerta.classList.add("hidden");
+      alerta.classList.remove("success");
+      alerta.classList.remove("danger");
+    }, 1000);
+  }
+
+  correo.addEventListener("click", () => {
+    const textContent = correo.querySelector("p").textContent;
+    navigator.clipboard.writeText(textContent).then(() => {
+      alert("success");
+    });
+  });
+
+  telefono.addEventListener("click", () => {
+    const textContent = telefono.querySelector("p").textContent;
+    navigator.clipboard.writeText(textContent).then(() => {
+      alert("success");
+    });
+  });
+</script>

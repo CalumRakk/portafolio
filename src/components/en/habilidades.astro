@@ -1,0 +1,48 @@
+---
+import { Icon } from "astro-icon/components";
+
+import data from "../../data.en.json";
+
+const skills = data.skills;
+---
+
+<section>
+  <h2>Skills</h2>
+  <ul>
+    {
+      skills.map((skill) => (
+        <li>
+          <article>
+            <Icon name={skill.filename} />
+            <span>{skill.name}</span>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 0.8em;
+  }
+  article {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    background-color: rgba(189, 189, 189, 0.438);
+    padding: 0.35em 0.42em;
+    border-radius: 0.4em;
+  }
+  @media print {
+    section {
+      break-inside: avoid;
+    }
+  }
+</style>

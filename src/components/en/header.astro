@@ -1,14 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
-import Top from "./top.astro";
-
-import data from "../data.json";
+import Top from "../top.astro";
+import data from "../../data.en.json";
 
 const { name, label, summary, location, profiles, email, phone } = data.basics;
 const { city, region } = location;
 const contacto = [email, phone].join(" | ");
 ---
-<Top language="en"/>
+
+<Top language="es" />
 <div class="contenedor">
   <div class="texto">
     <div>

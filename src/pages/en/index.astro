@@ -1,31 +1,25 @@
 ---
-import Header from "../components/header.astro";
-import About from "../components/about.astro";
-import Experiencia from "../components/experiencia.astro";
-import Educacion from "../components/educacion.astro";
-import Proyectos from "../components/proyectos.astro";
-import Habilidades from "../components/habilidades.astro";
-import Contacto from "../components/contacto.astro";
-
+import Header from "../../components/en/header.astro";
+import About from "../../components/en/about.astro";
+import Experiencia from "../../components/en/experiencia.astro";
+import Educacion from "../../components/en/educacion.astro";
+import Proyectos from "../../components/en/proyectos.astro";
+import Habilidades from "../../components/en/habilidades.astro";
+import Contacto from "../../components/en/contacto.astro";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
-import {  getRelativeLocaleUrlList } from 'astro:i18n';
-
-const {language, title} = Astro.props;
-const localeUrls = getRelativeLocaleUrlList();
 ---
 
-<html lang={language}>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Portafolio de Leonardo Castillo</title>
+    <title>Leonardo Castillo's Portfolio</title>
     <GoogleFontsOptimizer
       url="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
   </head>
   <body>
-
     <main>
       <section>
         <section></section>
@@ -50,7 +44,6 @@ const localeUrls = getRelativeLocaleUrlList();
         <div><Contacto /></div>
       </section>
     </main>
-    
   </body>
 </html>
 <style is:global>

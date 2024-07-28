@@ -6,4 +6,8 @@ export default defineConfig({
   integrations: [icon()],
   site: "https://calumrakk.github.io",
   base: "/portafolio",
+  i18n: {
+    locales: ["es", "en"],
+    defaultLocale: "es",
+  },
 });

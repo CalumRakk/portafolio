@@ -1,0 +1,56 @@
+---
+import { Icon } from "astro-icon/components";
+import { getRelativeLocaleUrlList } from "astro:i18n";
+
+const localeUrls = getRelativeLocaleUrlList();
+const { language } = Astro.props;
+console.log(localeUrls);
+console.log(language);
+---
+
+<nav>
+  <div>
+    {
+      language === "es" ? (
+      <a href={localeUrls[0]}><Icon name="material-symbols--translate" /> <span>ES</span></a>
+      ) : (
+      <a href={localeUrls[1]}><Icon name="material-symbols--translate" /> <span>EN</span></a>
+      )
+    }
+  </div>
+</nav>
+
+<style>
+  nav div:hover {
+    transform: scale(1.1);
+    text-shadow: 0 1px 1px #8d8d8d;
+    transition: all 0.2s ease;
+  }
+  svg{
+    cursor: pointer;
+  }
+  nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin: 0px;
+    align-items: center;
+    margin-right: .5vw;
+  }
+  nav div {
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+    background-color:;
+  }
+  a {
+    color: #777;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    
+  }
+</style>
