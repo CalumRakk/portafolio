@@ -57,44 +57,44 @@
         {
             "name": "toTelegram",
             "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
+            "description": "Convierte Telegram en un Google Drive. Guarda y mantiene tus archivos a salvo.",
             "url": "https://github.com/CalumRakk"
         },
         {
-            "name": "toTelegram",
+            "name": "Encriptador",
             "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
-            "url": "https://github.com/CalumRakk"
+            "description": "Encriptador desarrollado para el desafío del programa Oracle Next Education, impartido por Alura Latam",
+            "url": "https://github.com/CalumRakk/encriptador-de-texto-alura-challenges-one"
         },
         {
-            "name": "toTelegram",
-            "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
-            "url": "https://github.com/CalumRakk"
+            "name": "AutoCloud",
+            "isActive": false,
+            "description": "Script para saltar las restricciones de AWS Academy y mantener las instancias EC2 siempre encendidas",
+            "url": "https://github.com/CalumRakk/Cloud-Labs-Auto"
         },
         {
-            "name": "toTelegram",
+            "name": "fbstories",
             "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
-            "url": "https://github.com/CalumRakk"
+            "description": "Script para descargar las stories de Facebook",
+            "url": "https://github.com/CalumRakk/fbstories"
         },
         {
-            "name": "toTelegram",
+            "name": "sort_files",
             "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
-            "url": "https://github.com/CalumRakk"
+            "description": "Script increíblemente rápido para organizar automáticamente el contenido de carpetas específicas del sistema",
+            "url": "https://github.com/CalumRakk/sort_files"
         },
         {
-            "name": "toTelegram",
-            "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
-            "url": "https://github.com/CalumRakk"
+            "name": "Transito Project",
+            "isActive": false,
+            "description": "Nuevo sitio web del tránsito de Malambo, Atlántico, para administrar pagos y facturas",
+            "url": "https://github.com/giraldiego/transito_project"
         },
         {
-            "name": "toTelegram",
-            "isActive": true,
-            "description": "Convierte telegram en un google Driver, guarda y manten tus archivos a salvo",
-            "url": "https://github.com/CalumRakk"
+            "name": "caracolPlay",
+            "isActive": false,
+            "description": "Script para descargar cualquier serie que estaba disponible en la plataforma play.CaracolTV, la cual buscaba ser un 'Netflix'.",
+            "url": "https://github.com/CalumRakk/caracolPlay"
         }
     ],
     "skills": [
