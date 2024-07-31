@@ -1,5 +1,5 @@
 ---
-import InfoCard from "./infoCard.astro";
+import InfoCard from "@components/infoCard.astro";
 
 const locate = Astro.currentLocale;
 let module = locate === "es" ? await import("@data") : await import("@data.en");
