@@ -1,10 +1,13 @@
 ---
-import data from "@data";
+const locate = Astro.currentLocale;
+let module = locate === "es" ? await import("@data") : await import("@data.en");
+const data = module.default;
+
 const { about } = data.basics;
 ---
 
 <section>
-  <h2>Sobre Mí</h2>
+  <h2>{ locate === "es" ? "Sobre Mi" : "About"}</h2>
   <p>
     {about}
   </p>

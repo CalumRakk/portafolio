@@ -1,14 +1,16 @@
 ---
-import data from "@data";
+import InfoCard from "@components/infoCard.astro";
+
+const locate = Astro.currentLocale;
+let module = locate === "es" ? await import("@data") : await import("@data.en");
+const data = module.default;
+
 const { education } = data;
-
 const { institution, area, startDate, endDate } = education;
-
-import InfoCard from "./infoCard.astro";
 ---
 
 <section>
-  <h2>Educación</h2>
+  <h2>{locate === "es" ? "Educación" : "Education"}</h2>
   <InfoCard
     name={institution}
     descripcion={area}

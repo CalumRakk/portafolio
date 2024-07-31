@@ -8,13 +8,11 @@ import Habilidades from "@components/habilidades.astro";
 import Contacto from "@components/contacto.astro";
 
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
-import { getRelativeLocaleUrlList } from "astro:i18n";
 
-const { language, title } = Astro.props;
-const localeUrls = getRelativeLocaleUrlList();
+const locate = Astro.currentLocale;
 ---
 
-<html lang={language}>
+<html lang={locate}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />

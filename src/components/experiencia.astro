@@ -1,14 +1,17 @@
 ---
-import data from "@data";
-const { work } = data;
+import InfoCard from "./infoCard.astro";
 
+const locate = Astro.currentLocale;
+let module = locate === "es" ? await import("@data") : await import("@data.en");
+const data = module.default;
+
+const { work } = data;
 const { position, summary, startDate, endDate } = work;
 
-import InfoCard from "./infoCard.astro";
 ---
 
 <section>
-  <h2>Experiencia laboral</h2>
+  <h2>{locate === "es" ? "Experiencia" : "Experience"}</h2>
   <InfoCard
     name={position}
     descripcion={summary}

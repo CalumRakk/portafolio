@@ -4,7 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@data": ["src/data.json"]
+      "@data": ["src/data.json"],
+      "@data.en": ["src/data.en.json"]
     }
   }
 }

@@ -1,10 +1,13 @@
 ---
 import { Icon } from "astro-icon/components";
-import data from "@data";
+
+const locate = Astro.currentLocale;
+let module = locate === "es" ? await import("@data") : await import("@data.en");
+const data = module.default;
 ---
 
 <section>
-  <h2>Proyectos</h2>
+  <h2>{locate === "es" ? "Proyectos" : "Projects"}</h2>
   <ul>
     {
       data.projects.map((item) => (

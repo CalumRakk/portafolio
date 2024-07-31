@@ -2,13 +2,17 @@
 import { Icon } from "astro-icon/components";
 import Top from "@components/top.astro";
 
-import { basics } from "@data";
+
+const locate = Astro.currentLocale;
+let module = locate === "es" ? await import("@data") : await import("@data.en");
+const data = module.default;
+
 const { name, label, summary, location, profiles, email, phone, image } =
-  basics;
+  data.basics;
 const { city, region } = location;
 ---
 
-<Top language="en" />
+<Top language={locate} />
 <div class="contenedor">
   <div class="texto">
     <div>
