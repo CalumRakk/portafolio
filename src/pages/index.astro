@@ -1,11 +1,11 @@
 ---
-import Header from "@components/sections/hero.astro";
+import Hero from "@components/sections/hero.astro";
 import About from "@components/sections/about.astro";
-import Experiencia from "@components/sections/experience.astro";
-import Educacion from "@components/sections/education.astro";
-import Proyectos from "@components/sections/projects.astro";
-import Habilidades from "@components/sections/skills.astro";
-import Contacto from "@components/sections/contact.astro";
+import Experience from "@components/sections/experience.astro";
+import Edutation from "@components/sections/education.astro";
+import Projects from "@components/sections/projects.astro";
+import Skills from "@components/sections/skills.astro";
+import Contact from "@components/sections/contact.astro";
 
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 
@@ -26,25 +26,25 @@ const locate = Astro.currentLocale;
     <main>
       <section>
         <section></section>
-        <div><Header /></div>
+        <div><Hero /></div>
       </section>
       <section class="fondo">
         <div><About /></div>
       </section>
       <section>
-        <div><Experiencia /></div>
+        <div><Experience /></div>
       </section>
       <section class="fondo">
-        <div><Proyectos /></div>
+        <div><Projects /></div>
       </section>
       <section>
-        <div><Educacion /></div>
+        <div><Edutation /></div>
       </section>
       <section class="fondo">
-        <div><Habilidades /></div>
+        <div><Skills /></div>
       </section>
       <section>
-        <div><Contacto /></div>
+        <div><Contact /></div>
       </section>
     </main>
   </body>

@@ -4,17 +4,19 @@ import { getRelativeLocaleUrlList } from "astro:i18n";
 
 const localeUrls = getRelativeLocaleUrlList();
 const { language } = Astro.props;
-console.log(localeUrls);
-console.log(language);
 ---
 
 <nav>
   <div>
     {
       language === "es" ? (
-      <a href={localeUrls[1]}><Icon name="material-symbols--translate" /> <span>EN</span></a>
+        <a href={localeUrls[1]}>
+          <Icon name="material-symbols--translate" /> <span>EN</span>
+        </a>
       ) : (
-      <a href={localeUrls[0]}><Icon name="material-symbols--translate" /> <span>ES</span></a>
+        <a href={localeUrls[0]}>
+          <Icon name="material-symbols--translate" /> <span>ES</span>
+        </a>
       )
     }
   </div>
@@ -26,7 +28,7 @@ console.log(language);
     text-shadow: 0 1px 1px #8d8d8d;
     transition: all 0.2s ease;
   }
-  svg{
+  svg {
     cursor: pointer;
   }
   nav {
@@ -37,7 +39,7 @@ console.log(language);
     justify-content: end;
     margin: 0px;
     align-items: center;
-    margin-right: .5vw;
+    margin-right: 0.5vw;
   }
   nav div {
     display: flex;
@@ -51,6 +53,5 @@ console.log(language);
     display: flex;
     align-items: center;
     gap: 0.2em;
-    
   }
 </style>

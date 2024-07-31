@@ -1,22 +1,27 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const locate = Astro.currentLocale;
+let module = locate === "es" ? await import("@data") : await import("@data.en");
+const data = module.default;
+
+const { contact_message, email, phone } = data.basics;
 ---
 
 <section>
-  <h2>Contáctame</h2>
+  <h2>{locate === "es" ? "Contacto" : "Contact"}</h2>
   <p>
-    No dudes en comunicarte conmigo si está buscando un desarrollador, si tienes
-    alguna consulta o simplemente quieres contactarme
+    {contact_message}
   </p>
   <div id="correo-copy">
     <Icon name="material-symbols--mail-outline" />
-    <p>leocasti2@gmail.com</p>
+    <p>{email}</p>
     <Icon name="copy" />
   </div>
 
   <div id="telefono-copy">
     <Icon name="mdi--phone" />
-    <p>+57 3152802284</p>
+    <p>{phone}</p>
     <Icon name="copy" />
   </div>
 
