@@ -1,16 +1,16 @@
 ---
-import Header from "../components/header.astro";
-import About from "../components/about.astro";
-import Experiencia from "../components/experiencia.astro";
-import Educacion from "../components/educacion.astro";
-import Proyectos from "../components/proyectos.astro";
-import Habilidades from "../components/habilidades.astro";
-import Contacto from "../components/contacto.astro";
+import Header from "@components/header.astro";
+import About from "@components/about.astro";
+import Experiencia from "@components/experiencia.astro";
+import Educacion from "@components/educacion.astro";
+import Proyectos from "@components/proyectos.astro";
+import Habilidades from "@components/habilidades.astro";
+import Contacto from "@components/contacto.astro";
 
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
-import {  getRelativeLocaleUrlList } from 'astro:i18n';
+import { getRelativeLocaleUrlList } from "astro:i18n";
 
-const {language, title} = Astro.props;
+const { language, title } = Astro.props;
 const localeUrls = getRelativeLocaleUrlList();
 ---
 
@@ -25,7 +25,6 @@ const localeUrls = getRelativeLocaleUrlList();
     />
   </head>
   <body>
-
     <main>
       <section>
         <section></section>
@@ -50,7 +49,6 @@ const localeUrls = getRelativeLocaleUrlList();
         <div><Contacto /></div>
       </section>
     </main>
-    
   </body>
 </html>
 <style is:global>

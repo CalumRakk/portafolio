@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import data from "../data.json";
+import data from "@data";
 ---
 
 <section>
@@ -12,7 +12,7 @@ import data from "../data.json";
           <article>
             <header>
               <h4>{item.name}</h4>
-              <a href=`${ item.url}` class="icon">
+              <a href=`${ item.url}` class="icon" target="_blank">
                 <Icon name="mdi--github"  />{" "}
                 {item.isActive ? (
                   <Icon class="padlock unlock" title="proyecto publico" name="mdi--unlocked" />

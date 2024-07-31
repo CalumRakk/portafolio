@@ -1,14 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
-import Top from "./top.astro";
+import Top from "@components/top.astro";
 
-import data from "../data.json";
-
-const { name, label, summary, location, profiles, email, phone } = data.basics;
+import { basics } from "@data";
+const { name, label, summary, location, profiles, email, phone, image } =
+  basics;
 const { city, region } = location;
-const contacto = [email, phone].join(" | ");
 ---
-<Top language="en"/>
+
+<Top language="en" />
 <div class="contenedor">
   <div class="texto">
     <div>
@@ -48,7 +48,7 @@ const contacto = [email, phone].join(" | ");
       </div>
     </div>
     <div class="icons-no-print">
-      <p>{contacto}</p>
+      <p>{[email, phone].join(" | ")}</p>
       <div class="ubicacion">
         <Icon class="icon2" name="uiw--environment" />
         <p class="parrafo_ubicacion color_gray">{city}, {region}</p>
@@ -56,9 +56,7 @@ const contacto = [email, phone].join(" | ");
     </div>
   </div>
   <div class="imagen">
-    <img
-      src="https://c.wallhere.com/images/a4/4a/bc0043040759d410a15405f56ef3-2072969.jpg!d"
-    />
+    <img src={image} />
     <div></div>
   </div>
 </div>
