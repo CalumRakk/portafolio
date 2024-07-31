@@ -4,8 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@data": ["src/data.json"],
-      "@data.en": ["src/data.en.json"]
+      "@data": ["src/portfolio_data/data.json"],
+      "@data.en": ["src/portfolio_data/data.en.json"]
     }
   }
 }
