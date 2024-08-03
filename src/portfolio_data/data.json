@@ -59,7 +59,7 @@
             "name": "toTelegram",
             "isActive": true,
             "description": "Convierte Telegram en un Google Drive. Guarda y mantiene tus archivos a salvo.",
-            "url": "https://github.com/CalumRakk"
+            "url": "https://github.com/CalumRakk/toTelegram"
         },
         {
             "name": "Encriptador",
@@ -171,6 +171,39 @@
             ]
         },
         {
+            "name": "Selenium",
+            "level": "Avanzado",
+            "filename": "simple-icons--selenium",
+            "keywords": [
+                "automatización",
+                "testing",
+                "navegador web",
+                "web scraping"
+            ]
+        },
+        {
+            "name": "Playwright",
+            "level": "Avanzado",
+            "filename": "devicon-plain--playwright",
+            "keywords": [
+                "automatización",
+                "testing",
+                "navegador web",
+                "web scraping"
+            ]
+        },
+        {
+            "name": "Scraping",
+            "level": "Avanzado",
+            "filename": "simple-icons--scrapy",
+            "keywords": [
+                "automatización",
+                "testing",
+                "navegador web",
+                "web scraping"
+            ]
+        },
+        {
             "name": "React",
             "level": "Avanzado",
             "filename": "mdi--react",
@@ -179,6 +212,18 @@
                 "Frontend",
                 "JavaScript Library",
                 "UI"
+            ]
+        },
+        {
+            "name": "Astro",
+            "level": "Avanzado",
+            "filename": "simple-icons--astro",
+            "keywords": [
+                "blogs",
+                "Frontend",
+                "Backend",
+                "Desarrollo Web",
+                "frameworks"
             ]
         }
     ]
