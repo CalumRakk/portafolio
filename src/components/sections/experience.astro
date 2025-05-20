@@ -4,18 +4,19 @@ import InfoCard from "@components/infoCard.astro";
 const locate = Astro.currentLocale;
 let module = locate === "es" ? await import("@data") : await import("@data.en");
 const data = module.default;
-
-const { work } = data;
-const { position, summary, startDate, endDate } = work;
-
 ---
 
 <section>
   <h2>{locate === "es" ? "Experiencia" : "Experience"}</h2>
-  <InfoCard
-    name={position}
-    descripcion={summary}
-    startDate={startDate}
-    endDate={endDate}
-  />
+  {
+    data.works.map((item) => (
+      <InfoCard
+        name={item.name}
+        position={item.position}
+        summary={item.summary}
+        startDate={item.startDate}
+        endDate={item.endDate}
+      />
+    ))
+  }
 </section>

@@ -1,6 +1,6 @@
 {
     "basics": {
-        "name": "Hola, soy Leonardo",
+        "name": "Leonardo Castillo Aguilar",
         "label": "Full Stack & Developer software",
         "image": "https://c.wallhere.com/images/a4/4a/bc0043040759d410a15405f56ef3-2072969.jpg!d",
         "email": "leocasti2@gmail.com",
@@ -37,14 +37,15 @@
             }
         ]
     },
-    "work": {
-        "name": null,
-        "position": "Desarrollador Web, Malambo Atlántico",
-        "url": null,
-        "startDate": "01/2023",
-        "endDate": "04/2023",
-        "summary": "Fui parte del Desarrollo de la web usando Djando del lado del backend y para la interactividad de la web usando JavaScript con JQuery."
-    },
+    "works": [
+        {
+            "name": "Currican - Soledad Atlantico",
+            "summary": "Desarrollador backend\n - Lideré el desarrollo principal del backend para una aplicación que genera currículums mediante inteligencia artificial.\n - Diseñé la arquitectura lógica central de la aplicación.\n - Implementé un sistema de autenticación y renovación de sesiones con JSON Web Tokens, incorporando medidas de seguridad avanzadas como validación de IP cercana, user-agent y otros metadatos para detectar accesos fraudulentos o robos de tokens",
+            "position": "Desarrollador backend",
+            "startDate": "Enero 2025",
+            "endDate": "Presente"
+        }
+    ],
     "education": {
         "institution": "SENA: Servicio Nacional de Aprendizaje",
         "url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",

@@ -37,14 +37,16 @@
             }
         ]
     },
-    "work": {
-        "company": "Malambo Atl\u00e1ntico",
-        "position": "Web Developer",
-        "url": null,
-        "startDate": "2023-01",
-        "endDate": "2023-04",
-        "summary": "Part of the web development using Django for the backend and JavaScript with jQuery for the web interactivity."
-    },
+    "works": [
+        {
+            "company": "Malambo Atl\u00e1ntico",
+            "position": "Web Developer",
+            "url": null,
+            "startDate": "2023-01",
+            "endDate": "2023-04",
+            "summary": "Part of the web development using Django for the backend and JavaScript with jQuery for the web interactivity."
+        }
+    ],
     "education": {
         "institution": "SENA: Servicio Nacional de Aprendizaje",
         "url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",

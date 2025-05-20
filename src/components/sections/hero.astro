@@ -2,7 +2,6 @@
 import { Icon } from "astro-icon/components";
 import Top from "@components/top.astro";
 
-
 const locate = Astro.currentLocale;
 let module = locate === "es" ? await import("@data") : await import("@data.en");
 const data = module.default;
@@ -14,54 +13,21 @@ const { city, region } = location;
 
 <Top language={locate} />
 <div class="contenedor">
-  <div class="texto">
-    <div>
-      <h1 class="titulo">{name}</h1>
-      <p class="label color_gray">{label}</p>
+  <h1 class="fullname">{name}</h1>
+
+  <div class="item_container">
+    <div class="item">
+      <Icon name="material-symbols--mail-outline" />
+      <p>{email}</p>
     </div>
-    <div>
-      <p class="summary">
-        {summary}
-      </p>
+    <div class="item">
+      <Icon name="mdi--github" />
+      <p>CalumRakk</p>
     </div>
-    <div class="icons">
-      <ul>
-        {
-          profiles.map((profile) => (
-            <li>
-              <a href={profile.url} class="icon" target="_blank">
-                <Icon name={profile.icon_filename} />
-              </a>
-            </li>
-          ))
-        }
-        <li>
-          <a href=`mailto:${email}` class="icon">
-            <Icon name="material-symbols--mail-outline" />
-          </a>
-        </li>
-        <li>
-          <a href=`tel:${phone}` class="icon">
-            <Icon name="mdi--phone" />
-          </a>
-        </li>
-      </ul>
-      <div class="ubicacion">
-        <Icon class="icon2" name="uiw--environment" />
-        <p class="parrafo_ubicacion color_gray">{city}, {region}</p>
-      </div>
+    <div class="item">
+      <Icon name="uiw--environment" />
+      <p>{location.city}, {location.region}</p>
     </div>
-    <div class="icons-no-print">
-      <p>{[email, phone].join(" | ")}</p>
-      <div class="ubicacion">
-        <Icon class="icon2" name="uiw--environment" />
-        <p class="parrafo_ubicacion color_gray">{city}, {region}</p>
-      </div>
-    </div>
-  </div>
-  <div class="imagen">
-    <img src={image} />
-    <div></div>
   </div>
 </div>
 
@@ -69,9 +35,30 @@ const { city, region } = location;
   .summary {
     margin-top: 4px;
   }
-  p {
-    font-size: 1em;
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .fullname {
+    margin-bottom: 0.25em;
+    text-wrap: nowrap;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 0px;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .item_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
   ul {
     list-style: none;
     padding: 0;
@@ -87,14 +74,7 @@ const { city, region } = location;
     font-size: 1em;
     margin: 0px;
   }
-  .titulo {
-    margin-bottom: 0.25em;
-    text-wrap: nowrap;
-    text-transform: capitalize;
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-top: 0px;
-  }
+
   img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -104,12 +84,6 @@ const { city, region } = location;
     height: 128px;
   }
 
-  .contenedor {
-    margin-top: 2vh;
-    display: flex;
-    gap: 4%;
-    /* margin-top: 1vh; */
-  }
   .icon {
     color: #777;
     display: inline-flex;
