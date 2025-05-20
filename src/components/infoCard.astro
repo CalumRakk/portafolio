@@ -1,5 +1,5 @@
 ---
-const { name, summary = "# test", startDate, endDate } = Astro.props;
+const { name, summary = "# test", startDate, endDate, position } = Astro.props;
 import { marked } from "marked";
 
 const content = marked.parse(summary);
@@ -8,15 +8,22 @@ const content = marked.parse(summary);
 <section>
   <h3>{name}</h3>
   <time class="color_gray fecha">{startDate}-{endDate}</time>
+  <p>{position}</p>
   <div set:html={content} />
 </section>
 
 <style>
-  div {
+  h3,
+  p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+  div,
+  p {
     color: #707070;
     font-size: 0.9em;
   }
   time {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 </style>

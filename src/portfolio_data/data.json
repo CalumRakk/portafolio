@@ -40,10 +40,17 @@
     "works": [
         {
             "name": "Currican - Soledad Atlantico",
-            "summary": "Desarrollador backend\n - Lideré el desarrollo principal del backend para una aplicación que genera currículums mediante inteligencia artificial.\n - Diseñé la arquitectura lógica central de la aplicación.\n - Implementé un sistema de autenticación y renovación de sesiones con JSON Web Tokens, incorporando medidas de seguridad avanzadas como validación de IP cercana, user-agent y otros metadatos para detectar accesos fraudulentos o robos de tokens",
+            "summary": "Lidero el desarrollo principal del backend para una aplicación para generar currículums mediante inteligencia artificial.\n - Responsable del desarrollo de la arquitectura y lógica central de la aplicación.\n - Implementé un sistema de autenticación y renovación de sesiones con JSON Web Tokens, incorporando medidas de seguridad avanzadas como validación de IP cercana, user-agent y otros metadatos para detectar accesos fraudulentos o robos de tokens",
             "position": "Desarrollador backend",
             "startDate": "Enero 2025",
             "endDate": "Presente"
+        },
+        {
+            "name": "Secretaría de Transporte y Tránsito - Malambo",
+            "summary": "- Desarrollé una aplicación web interna con Django y jQuery para la generación de recibos de pago.\n - Lideré el rediseño de la interfaz visual e implementé optimizaciones que mejoraron en un 35 % el rendimiento de la consulta principal (reporte del día)\n",
+            "position": "Full stack",
+            "startDate": "Enero 2023",
+            "endDate": "Noviembre 2023"
         }
     ],
     "education": {
